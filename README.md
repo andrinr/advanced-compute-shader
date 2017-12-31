@@ -4,4 +4,4 @@ Basic Principles: https://andrinrehmann.com/pseudo3d/
 Watch previous version in action: https://www.youtube.com/watch?v=C2fMCBgaxlo
 
 Issues:
-There seems to be a problem with the structure of the shader. The shader can only draw lines and surfaces with the texture coordinate axises but not against them. I assume, if pixels are written against the direction of the axis, it will be drawn with other information in the same frame.
+As you can see in the video, the surfaces are only able to grow along the opposite direction of the coordinate axis but not with the axis. I found if they grow along the direction, they can only do so within the local group size of the compute shader. I have tried to adress this issue, but with no succes.
